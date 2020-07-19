@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCC2244424C4783D005E68AD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2244324C4783D005E68AD /* Tests_iOS.swift */; };
+		FCC2244F24C4783D005E68AD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2244E24C4783D005E68AD /* Tests_macOS.swift */; };
+		FCC2245124C4783D005E68AD /* Manga_EpubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2242824C4783A005E68AD /* Manga_EpubApp.swift */; };
+		FCC2245224C4783D005E68AD /* Manga_EpubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2242824C4783A005E68AD /* Manga_EpubApp.swift */; };
+		FCC2245324C4783D005E68AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2242924C4783A005E68AD /* ContentView.swift */; };
+		FCC2245424C4783D005E68AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2242924C4783A005E68AD /* ContentView.swift */; };
+		FCC2245524C4783D005E68AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC2242A24C4783C005E68AD /* Assets.xcassets */; };
+		FCC2245624C4783D005E68AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC2242A24C4783C005E68AD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCC2244024C4783D005E68AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC2242324C4783A005E68AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC2242E24C4783C005E68AD;
+			remoteInfo = "Manga Epub (iOS)";
+		};
+		FCC2244B24C4783D005E68AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC2242324C4783A005E68AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC2243624C4783D005E68AD;
+			remoteInfo = "Manga Epub (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCC2242824C4783A005E68AD /* Manga_EpubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manga_EpubApp.swift; sourceTree = "<group>"; };
+		FCC2242924C4783A005E68AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCC2242A24C4783C005E68AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCC2242F24C4783D005E68AD /* Manga Epub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Manga Epub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC2243224C4783D005E68AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC2243724C4783D005E68AD /* Manga Epub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Manga Epub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC2243924C4783D005E68AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC2243A24C4783D005E68AD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FCC2243F24C4783D005E68AD /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC2244324C4783D005E68AD /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		FCC2244524C4783D005E68AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC2244A24C4783D005E68AD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC2244E24C4783D005E68AD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		FCC2245024C4783D005E68AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCC2242C24C4783C005E68AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2243424C4783D005E68AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2243C24C4783D005E68AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2244724C4783D005E68AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCC2242224C4783A005E68AD = {
+			isa = PBXGroup;
+			children = (
+				FCC2242724C4783A005E68AD /* Shared */,
+				FCC2243124C4783D005E68AD /* iOS */,
+				FCC2243824C4783D005E68AD /* macOS */,
+				FCC2244224C4783D005E68AD /* Tests iOS */,
+				FCC2244D24C4783D005E68AD /* Tests macOS */,
+				FCC2243024C4783D005E68AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCC2242724C4783A005E68AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2242824C4783A005E68AD /* Manga_EpubApp.swift */,
+				FCC2242924C4783A005E68AD /* ContentView.swift */,
+				FCC2242A24C4783C005E68AD /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FCC2243024C4783D005E68AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2242F24C4783D005E68AD /* Manga Epub.app */,
+				FCC2243724C4783D005E68AD /* Manga Epub.app */,
+				FCC2243F24C4783D005E68AD /* Tests iOS.xctest */,
+				FCC2244A24C4783D005E68AD /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCC2243124C4783D005E68AD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2243224C4783D005E68AD /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		FCC2243824C4783D005E68AD /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2243924C4783D005E68AD /* Info.plist */,
+				FCC2243A24C4783D005E68AD /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		FCC2244224C4783D005E68AD /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2244324C4783D005E68AD /* Tests_iOS.swift */,
+				FCC2244524C4783D005E68AD /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		FCC2244D24C4783D005E68AD /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2244E24C4783D005E68AD /* Tests_macOS.swift */,
+				FCC2245024C4783D005E68AD /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCC2242E24C4783C005E68AD /* Manga Epub (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC2245924C4783D005E68AD /* Build configuration list for PBXNativeTarget "Manga Epub (iOS)" */;
+			buildPhases = (
+				FCC2242B24C4783C005E68AD /* Sources */,
+				FCC2242C24C4783C005E68AD /* Frameworks */,
+				FCC2242D24C4783C005E68AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Manga Epub (iOS)";
+			productName = "Manga Epub (iOS)";
+			productReference = FCC2242F24C4783D005E68AD /* Manga Epub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCC2243624C4783D005E68AD /* Manga Epub (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC2245C24C4783D005E68AD /* Build configuration list for PBXNativeTarget "Manga Epub (macOS)" */;
+			buildPhases = (
+				FCC2243324C4783D005E68AD /* Sources */,
+				FCC2243424C4783D005E68AD /* Frameworks */,
+				FCC2243524C4783D005E68AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Manga Epub (macOS)";
+			productName = "Manga Epub (macOS)";
+			productReference = FCC2243724C4783D005E68AD /* Manga Epub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCC2243E24C4783D005E68AD /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC2245F24C4783D005E68AD /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				FCC2243B24C4783D005E68AD /* Sources */,
+				FCC2243C24C4783D005E68AD /* Frameworks */,
+				FCC2243D24C4783D005E68AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC2244124C4783D005E68AD /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = FCC2243F24C4783D005E68AD /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FCC2244924C4783D005E68AD /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC2246224C4783D005E68AD /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				FCC2244624C4783D005E68AD /* Sources */,
+				FCC2244724C4783D005E68AD /* Frameworks */,
+				FCC2244824C4783D005E68AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC2244C24C4783D005E68AD /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = FCC2244A24C4783D005E68AD /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCC2242324C4783A005E68AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FCC2242E24C4783C005E68AD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					FCC2243624C4783D005E68AD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					FCC2243E24C4783D005E68AD = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = FCC2242E24C4783C005E68AD;
+					};
+					FCC2244924C4783D005E68AD = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = FCC2243624C4783D005E68AD;
+					};
+				};
+			};
+			buildConfigurationList = FCC2242624C4783A005E68AD /* Build configuration list for PBXProject "Manga Epub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCC2242224C4783A005E68AD;
+			productRefGroup = FCC2243024C4783D005E68AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCC2242E24C4783C005E68AD /* Manga Epub (iOS) */,
+				FCC2243624C4783D005E68AD /* Manga Epub (macOS) */,
+				FCC2243E24C4783D005E68AD /* Tests iOS */,
+				FCC2244924C4783D005E68AD /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCC2242D24C4783C005E68AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2245524C4783D005E68AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2243524C4783D005E68AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2245624C4783D005E68AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2243D24C4783D005E68AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2244824C4783D005E68AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCC2242B24C4783C005E68AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2245324C4783D005E68AD /* ContentView.swift in Sources */,
+				FCC2245124C4783D005E68AD /* Manga_EpubApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2243324C4783D005E68AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2245424C4783D005E68AD /* ContentView.swift in Sources */,
+				FCC2245224C4783D005E68AD /* Manga_EpubApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2243B24C4783D005E68AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2244424C4783D005E68AD /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2244624C4783D005E68AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2244F24C4783D005E68AD /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCC2244124C4783D005E68AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC2242E24C4783C005E68AD /* Manga Epub (iOS) */;
+			targetProxy = FCC2244024C4783D005E68AD /* PBXContainerItemProxy */;
+		};
+		FCC2244C24C4783D005E68AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC2243624C4783D005E68AD /* Manga Epub (macOS) */;
+			targetProxy = FCC2244B24C4783D005E68AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCC2245724C4783D005E68AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCC2245824C4783D005E68AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FCC2245A24C4783D005E68AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Manga-Epub";
+				PRODUCT_NAME = "Manga Epub";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCC2245B24C4783D005E68AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Manga-Epub";
+				PRODUCT_NAME = "Manga Epub";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCC2245D24C4783D005E68AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Manga-Epub";
+				PRODUCT_NAME = "Manga Epub";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FCC2245E24C4783D005E68AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Manga-Epub";
+				PRODUCT_NAME = "Manga Epub";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FCC2246024C4783D005E68AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Manga Epub (iOS)";
+			};
+			name = Debug;
+		};
+		FCC2246124C4783D005E68AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Manga Epub (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCC2246324C4783D005E68AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Manga Epub (macOS)";
+			};
+			name = Debug;
+		};
+		FCC2246424C4783D005E68AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2D7T23VV7R;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.inuk.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Manga Epub (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCC2242624C4783A005E68AD /* Build configuration list for PBXProject "Manga Epub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC2245724C4783D005E68AD /* Debug */,
+				FCC2245824C4783D005E68AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC2245924C4783D005E68AD /* Build configuration list for PBXNativeTarget "Manga Epub (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC2245A24C4783D005E68AD /* Debug */,
+				FCC2245B24C4783D005E68AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC2245C24C4783D005E68AD /* Build configuration list for PBXNativeTarget "Manga Epub (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC2245D24C4783D005E68AD /* Debug */,
+				FCC2245E24C4783D005E68AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC2245F24C4783D005E68AD /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC2246024C4783D005E68AD /* Debug */,
+				FCC2246124C4783D005E68AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC2246224C4783D005E68AD /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC2246324C4783D005E68AD /* Debug */,
+				FCC2246424C4783D005E68AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCC2242324C4783A005E68AD /* Project object */;
+}
