@@ -15,11 +15,11 @@ struct ContentView: View {
         VStack {
             Text("Hello, world!").padding()
             if fileChosen {
-                PickedFile()
+                PickedFile().padding()
             }
             Button(fileChosen ? "Remove File" : "Pick File") {
                 fileChosen.toggle()
-            }
+            }.padding()
         }
     }
 }
@@ -31,12 +31,17 @@ struct PickedFile: View {
     
     init() {
         fileObject = ToEpub()
-        file.callAsFunction(singleOfType: [.zip], completion: fileObject.completion)
+        var utArray: [UTType] = [.zip]
+        UTType(mimeType: "application/x-cbz", conformingTo: .zip).map { cbzType in
+            print("Succesafully found cbz UTType")
+            utArray.append(cbzType)
+        }
+        file.callAsFunction(singleOfType: utArray, completion: fileObject.completion)
        
     }
     
     var body: some View {
-        Text(fileObject.filePath)
+        Text(fileObject.filePathComponent)
     }
 }
 
