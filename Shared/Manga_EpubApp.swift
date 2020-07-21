@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Manga_EpubApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

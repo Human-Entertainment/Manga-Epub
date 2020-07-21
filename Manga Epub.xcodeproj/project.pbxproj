@@ -15,6 +15,10 @@
 		FCC2245424C4783D005E68AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2242924C4783A005E68AD /* ContentView.swift */; };
 		FCC2245524C4783D005E68AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC2242A24C4783C005E68AD /* Assets.xcassets */; };
 		FCC2245624C4783D005E68AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC2242A24C4783C005E68AD /* Assets.xcassets */; };
+		FCC2246724C47967005E68AD /* ToEpub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2246624C47967005E68AD /* ToEpub.swift */; };
+		FCC2246824C47967005E68AD /* ToEpub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2246624C47967005E68AD /* ToEpub.swift */; };
+		FCC2246A24C479C2005E68AD /* CBZDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2246924C479C2005E68AD /* CBZDropDelegate.swift */; };
+		FCC2246B24C479C2005E68AD /* CBZDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2246924C479C2005E68AD /* CBZDropDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		FCC2244A24C4783D005E68AD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC2244E24C4783D005E68AD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		FCC2245024C4783D005E68AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC2246624C47967005E68AD /* ToEpub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToEpub.swift; sourceTree = "<group>"; };
+		FCC2246924C479C2005E68AD /* CBZDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBZDropDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		FCC2242724C4783A005E68AD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FCC2246524C47932005E68AD /* CBZ */,
 				FCC2242824C4783A005E68AD /* Manga_EpubApp.swift */,
 				FCC2242924C4783A005E68AD /* ContentView.swift */,
 				FCC2242A24C4783C005E68AD /* Assets.xcassets */,
@@ -149,6 +156,15 @@
 				FCC2245024C4783D005E68AD /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		FCC2246524C47932005E68AD /* CBZ */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2246624C47967005E68AD /* ToEpub.swift */,
+				FCC2246924C479C2005E68AD /* CBZDropDelegate.swift */,
+			);
+			path = CBZ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +324,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC2246724C47967005E68AD /* ToEpub.swift in Sources */,
 				FCC2245324C4783D005E68AD /* ContentView.swift in Sources */,
 				FCC2245124C4783D005E68AD /* Manga_EpubApp.swift in Sources */,
+				FCC2246A24C479C2005E68AD /* CBZDropDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC2246824C47967005E68AD /* ToEpub.swift in Sources */,
 				FCC2245424C4783D005E68AD /* ContentView.swift in Sources */,
 				FCC2245224C4783D005E68AD /* Manga_EpubApp.swift in Sources */,
+				FCC2246B24C479C2005E68AD /* CBZDropDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
