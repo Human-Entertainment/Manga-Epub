@@ -1,6 +1,7 @@
 import Combine
 import Foundation
 import ZIPFoundation
+import Plot
 
 class ToEpub: ObservableObject {
     @Published var filePathComponent = ""
@@ -45,8 +46,24 @@ class ToEpub: ObservableObject {
         }
     }
     
+    func bookPage(title: String, image src: String) -> HTML {
+        HTML(
+            .head(
+                .title(title),
+                .link(.href("../style/epub3_css_r1.css"),.rel(.stylesheet),.type("text/css")),
+                .meta(.content("width=1600, height=2278"), .name("viewport"))
+            ),
+            .body(
+                .div(.class("page"),
+                        .img(.alt("background"),.class("backgroundImage"),.src(src))
+                     )
+            )
+        )
+    }
+    
     enum IsFinished {
         case notFinished
         case epub(URL)
     }
 }
+

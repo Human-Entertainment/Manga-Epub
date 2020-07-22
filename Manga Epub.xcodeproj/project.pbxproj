@@ -10,6 +10,8 @@
 		FC3F2AAE24C78B3900ECC933 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2AAD24C78B3900ECC933 /* ZIPFoundation */; };
 		FC3F2AB024C78BCC00ECC933 /* Manga Epub.app in Resources */ = {isa = PBXBuildFile; fileRef = FCC2243724C4783D005E68AD /* Manga Epub.app */; };
 		FC3F2AB424C78BD200ECC933 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = FC3F2AB324C78BD200ECC933 /* ZIPFoundation */; };
+		FC497E6D24C8EBDF0035E6DA /* Plot in Frameworks */ = {isa = PBXBuildFile; productRef = FC497E6C24C8EBDF0035E6DA /* Plot */; };
+		FC497E6F24C8EBE60035E6DA /* Plot in Frameworks */ = {isa = PBXBuildFile; productRef = FC497E6E24C8EBE60035E6DA /* Plot */; };
 		FCC2244424C4783D005E68AD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2244324C4783D005E68AD /* Tests_iOS.swift */; };
 		FCC2244F24C4783D005E68AD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2244E24C4783D005E68AD /* Tests_macOS.swift */; };
 		FCC2245124C4783D005E68AD /* Manga_EpubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2242824C4783A005E68AD /* Manga_EpubApp.swift */; };
@@ -73,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3F2AB424C78BD200ECC933 /* ZIPFoundation in Frameworks */,
+				FC497E6D24C8EBDF0035E6DA /* Plot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3F2AAE24C78B3900ECC933 /* ZIPFoundation in Frameworks */,
+				FC497E6F24C8EBE60035E6DA /* Plot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +210,7 @@
 			name = "Manga Epub (iOS)";
 			packageProductDependencies = (
 				FC3F2AB324C78BD200ECC933 /* ZIPFoundation */,
+				FC497E6C24C8EBDF0035E6DA /* Plot */,
 			);
 			productName = "Manga Epub (iOS)";
 			productReference = FCC2242F24C4783D005E68AD /* Manga Epub.app */;
@@ -226,6 +231,7 @@
 			name = "Manga Epub (macOS)";
 			packageProductDependencies = (
 				FC3F2AAD24C78B3900ECC933 /* ZIPFoundation */,
+				FC497E6E24C8EBE60035E6DA /* Plot */,
 			);
 			productName = "Manga Epub (macOS)";
 			productReference = FCC2243724C4783D005E68AD /* Manga Epub.app */;
@@ -303,6 +309,7 @@
 			mainGroup = FCC2242224C4783A005E68AD;
 			packageReferences = (
 				FC3F2AAC24C78B3900ECC933 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				FC497E6B24C8EBDF0035E6DA /* XCRemoteSwiftPackageReference "plot" */,
 			);
 			productRefGroup = FCC2243024C4783D005E68AD /* Products */;
 			projectDirPath = "";
@@ -762,6 +769,14 @@
 				minimumVersion = 0.9.11;
 			};
 		};
+		FC497E6B24C8EBDF0035E6DA /* XCRemoteSwiftPackageReference "plot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsundell/plot.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -774,6 +789,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FC3F2AAC24C78B3900ECC933 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
 			productName = ZIPFoundation;
+		};
+		FC497E6C24C8EBDF0035E6DA /* Plot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC497E6B24C8EBDF0035E6DA /* XCRemoteSwiftPackageReference "plot" */;
+			productName = Plot;
+		};
+		FC497E6E24C8EBE60035E6DA /* Plot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC497E6B24C8EBDF0035E6DA /* XCRemoteSwiftPackageReference "plot" */;
+			productName = Plot;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

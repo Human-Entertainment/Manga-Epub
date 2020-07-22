@@ -29,6 +29,9 @@ struct PickedFile: View {
     @Environment(\.importFiles) var file
     @ObservedObject var fileObject = ToEpub()
     
+    /// Creates a view where a document picker gets spowned. When document is picked, the name of the document is shown.
+    /// - Parameter fileChosen: binding parameter to react on document failure
+    /// - Description: If an error accurs of any kind `fileChosen` is turned into false
     init(fileChosen: Binding<Bool>) {
         self._fileChosen = fileChosen
         fileObject = ToEpub()
@@ -37,9 +40,9 @@ struct PickedFile: View {
             print("Succesafully found cbz UTType")
             utArray.append(cbzType)
         }
-        file.callAsFunction(singleOfType: utArray) { [self] in
+        file(singleOfType: utArray) { [self] in
             self.fileObject.completion(result: $0)
-                { self.fileChosen.toggle() }
+                { self.fileChosen = false }
         }
     }
     
