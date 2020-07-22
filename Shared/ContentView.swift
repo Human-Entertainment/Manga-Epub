@@ -15,7 +15,7 @@ struct ContentView: View {
         VStack {
             Text("Hello, world!").padding()
             if fileChosen {
-                PickedFile().padding()
+                PickedFile(fileChosen: $fileChosen).padding()
             }
             Button(fileChosen ? "Remove File" : "Pick File") {
                 fileChosen.toggle()
@@ -25,34 +25,28 @@ struct ContentView: View {
 }
 
 struct PickedFile: View {
-    
+    @Binding var fileChosen: Bool
     @Environment(\.importFiles) var file
-    @ObservedObject var fileObject: ToEpub
+    @ObservedObject var fileObject = ToEpub()
     
-    init() {
+    init(fileChosen: Binding<Bool>) {
+        self._fileChosen = fileChosen
         fileObject = ToEpub()
         var utArray: [UTType] = [.zip]
-        UTType(mimeType: "application/x-cbz", conformingTo: .zip).map { cbzType in
+        UTType(mimeType: "application/x-cbz").map { cbzType in
             print("Succesafully found cbz UTType")
             utArray.append(cbzType)
         }
-        file.callAsFunction(singleOfType: utArray, completion: fileObject.completion)
-       
+        file.callAsFunction(singleOfType: utArray) { [self] in
+            self.fileObject.completion(result: $0)
+                { self.fileChosen.toggle() }
+        }
     }
     
     var body: some View {
         Text(fileObject.filePathComponent)
     }
 }
-
-
-
-
-
-
-
-
-
 
 extension View {
     func cbzDrop() -> some View {

@@ -8,11 +8,18 @@ class ToEpub: ObservableObject {
     
     var fileURL: URL? = nil
     
-    func completion(result: Result<URL, Error>?) {
-        guard case .success(let url) = result else { return }
-        
+    func completion(result: Result<URL, Error>?, onFailure: () -> () ){
+        print("Reading ZIP")
+        guard case .success(let url) = result
+        else {
+            onFailure()
+            return
+        }
         self.filePathComponent = url.lastPathComponent
         self.fileURL = url
+        
+        self.disassambleZip()
+        print("Read ZIP")
     }
     
     func disassambleZip() {
@@ -24,8 +31,10 @@ class ToEpub: ObservableObject {
             do {
                 try fileManager.createDirectory(at: destination, withIntermediateDirectories: true, attributes: nil)
                 try fileManager.unzipItem(at: fileURL, to: destination)
+                
+                print(destination.hasDirectoryPath)
             } catch {
-                print("Issues loading zip")
+                print("Issues loading zip with \(error)")
             }
         }
     }
